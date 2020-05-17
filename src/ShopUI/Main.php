@@ -64,7 +64,7 @@ class Main extends PluginBase implements Listener {
 						if($api === null || $api->isDisabled()){
 						// CHECK THIS ?
 						}
-						$form = $api->createSimpleForm(function (Player $sender, array $data){
+						$form = new SimpleForm(function (Player $sender, ?int $data){
 
 						$result = $data[0];
 						
